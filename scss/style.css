@@ -1,0 +1,114 @@
+:root {
+  --background: #b7e0ff;
+  --white: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "comfortaa";
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--background);
+}
+
+i {
+  line-height: 0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px;
+}
+
+.container .color {
+  list-style: none;
+  margin: 1.3rem;
+  padding: .7rem;
+  background: var(--white);
+  border-radius: .6rem;
+  text-align: center;
+  -webkit-box-shadow: 0 1rem 2rem rgba(52, 87, 220, 0.08);
+          box-shadow: 0 1rem 2rem rgba(52, 87, 220, 0.08);
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.container .color:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.container .color .rect-box {
+  width: 18.5rem;
+  height: 18.5rem;
+  background: #8a6cff;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+.container .color:hover .rect-box {
+  -webkit-filter: brightness(106%);
+          filter: brightness(106%);
+}
+
+.container .color .hex-value {
+  display: block;
+  margin: 1.2rem 0 .8rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.refresh-btn {
+  position: fixed;
+  padding: 0;
+  right: 2rem;
+  bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  outline: none;
+  height: 5rem;
+  padding: 0 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff;
+  background: #8a6cff;
+  border: none;
+  border-radius: 45rem;
+  -webkit-box-shadow: 0 1.5rem 2rem rgba(52, 87, 220, 0.2);
+          box-shadow: 0 1.5rem 2rem rgba(52, 87, 220, 0.2);
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #398eea;
+}
+
+.refresh-btn:active {
+  -webkit-filter: brightness(106%);
+          filter: brightness(106%);
+}
+/*# sourceMappingURL=style.css.map */
